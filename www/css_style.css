@@ -6,3 +6,6 @@
 #canv {border:1px solid #000}
 
 #hrset {float:left}
+
+-webkit-touch-callout: none;
+-webkit-user-select: none;
