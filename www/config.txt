@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.chessclockapp"
+        versionCode="10" 
+        version   = "1.1.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>TinyTempo - Chess Clock App</name>
+
+    <description>
+        Chess & GO Digital Clock for your mobile device. Play on the move!
+    </description>
+
+    <author href="http://www.kelticweb.com" email="kelticsupport@gmail.com">
+        Gary Plowman
+    </author>
+
+</widget>
