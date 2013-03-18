@@ -1,19 +1,10 @@
-var deviceReadyDeferred = $.Deferred();
-var jqmReadyDeferred = $.Deferred();
+function init(){
+      document.addEventListener("deviceready", startup);
+    }
 
-document.addEventListener("deviceReady", deviceReady, false);
+    function startup(){
+      
 
-function deviceReady() {
-  deviceReadyDeferred.resolve();
-}
-
-$(document).one("mobileinit", function () {
-  jqmReadyDeferred.resolve();
-});
-
-$.when(deviceReadyDeferred, jqmReadyDeferred).then(doWhenBothFrameworksLoaded);
-
-function doWhenBothFrameworksLoaded() {
   // TBD
 
 
