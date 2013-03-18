@@ -37,9 +37,6 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
 
-    <uses-feature android:name="android.hardware.camera"/>
-    <uses-feature android:name="android.hardware.camera.autofocus"/>
-
     <!--library-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
@@ -78,7 +75,7 @@
                  android:debuggable="true"
                  android:theme="@android:style/Theme.NoTitleBar"
             >
-        <activity android:name="MyApp"
+        <activity android:name="TinyTempo"
                   android:label="@string/app_name"
                   android:configChanges="orientation|keyboardHidden|screenSize"
                   android:launchMode="singleTop"
@@ -93,12 +90,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.arellomobile.android.push.PushWebview"/>
-
-        <activity android:name="com.arellomobile.android.push.MessageActivity"/>
-
-        <activity android:name="com.arellomobile.android.push.PushHandlerActivity"/>
-
 
         <!--
           BroadcastReceiver that will receive intents from GCM
@@ -107,31 +98,18 @@
           The com.google.android.c2dm.permission.SEND permission is necessary
           so only GCM services can send data messages for the app.
         -->
-        <receiver
-                android:name="com.google.android.gcm.GCMBroadcastReceiver"
-                android:permission="com.google.android.c2dm.permission.SEND">
-            <intent-filter>
-                <!-- Receives the actual messages. -->
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-                <!-- Receives the registration id. -->
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
-                <category android:name="com.pushwoosh.test"/>
-            </intent-filter>
-        </receiver>
+
 
         <!--
           Application-specific subclass of PushGCMIntentService that will
           handle received messages.
         -->
-        <service android:name="com.arellomobile.android.push.PushGCMIntentService"/>
+
         
         <!--
           Service for sending location updates
         -->
-        <service android:name="com.arellomobile.android.push.GeoLocationService"/>
-        
-        <receiver android:name="com.arellomobile.android.push.AlarmReceiver"></receiver>
-        
+
 
     </application>
 </manifest>
