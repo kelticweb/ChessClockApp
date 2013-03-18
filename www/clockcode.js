@@ -1,4 +1,6 @@
-                                        
+ document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        // your functions here
 
 
 var tme1 = 120,
@@ -219,7 +221,7 @@ function setMode() {
 												
 		}
 
-
+}
 
 
 
