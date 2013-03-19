@@ -73,7 +73,7 @@
     <application android:icon="@drawable/icon"
                  android:label="@string/app_name"
                  android:debuggable="true"
-                 android:theme="@android:style/Theme.NoTitleBar"
+                 android:theme="@android:style/AppTheme"
             >
         <activity android:name="TinyTempo"
                   android:label="@string/app_name"

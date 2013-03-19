@@ -1,6 +1,6 @@
 function init(){
       document.addEventListener("deviceready", startup);
-    }
+    };
 
     function startup(){
       
@@ -26,8 +26,9 @@ var tme1 = 120,
 	
 
 	
-	window.onload = decclock();
+	decclock();
 
+};
 	
 function setClock(){
 	//  sets time for both clocks
@@ -227,7 +228,7 @@ function setMode() {
 												
 		}
 
-}
+
 
 
 
