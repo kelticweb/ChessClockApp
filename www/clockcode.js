@@ -1,4 +1,7 @@
+document.addEventListener("deviceready", onDeviceReady, false);
 
+
+  
 var tme1 = 120,
 	tme2 = 120, 
 	sttme1 = 120,
@@ -14,11 +17,16 @@ var tme1 = 120,
 	tcount2=0,
 	clk = 0;
 
+  function onDeviceReady() {
+      $(document).ready(function() {
+         $(document).bind("deviceready", function(){
+           
+			 decclock();
+         });
+      });
+    }
 
 
-function init(){
-      document.addEventListener("deviceready", startup);
-    };
 
  //   function startup(){
       
@@ -31,7 +39,7 @@ function init(){
 	
 
 	
-	decclock();
+	
 
 //};
 	
