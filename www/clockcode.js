@@ -1,13 +1,3 @@
-function init(){
-      document.addEventListener("deviceready", startup);
-    };
-
-    function startup(){
-      
-
-  // TBD
-
-
 
 var tme1 = 120,
 	tme2 = 120, 
@@ -23,12 +13,27 @@ var tme1 = 120,
 	tcount1=0,
 	tcount2=0,
 	clk = 0;
+
+
+
+function init(){
+      document.addEventListener("deviceready", startup);
+    };
+
+ //   function startup(){
+      
+
+  // TBD
+
+
+
+
 	
 
 	
 	decclock();
 
-};
+//};
 	
 function setClock(){
 	//  sets time for both clocks
@@ -142,17 +147,7 @@ function seconds2time (seconds) {
     return time;
 }
 
-$('.dial')
-    .trigger(
-        'configure',
-        {
-        "min":10,
-        "max":40,
-        "fgColor":"#FF0000",
-        "skin":"tron",
-        "cursor":true
-        }
-    );
+
 
 
 function drawarc1(per){
